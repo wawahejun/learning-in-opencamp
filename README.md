@@ -187,8 +187,8 @@ A: 目前支持 learning-lm-rs、learning-cxx、rustlings 等，可以通过扩�
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/learning-tools.git
-cd learning-tools
+git clone https://github.com/yourusername/learning-in-opencamp.git
+cd learning-in-opencamp
 
 # 安装依赖并编译
 cargo build
