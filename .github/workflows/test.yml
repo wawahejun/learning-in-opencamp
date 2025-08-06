@@ -83,6 +83,9 @@ jobs:
     - name: Create CI outputs directory
       run: |
         mkdir -p ci-outputs
+    - name: Create target directory for xtask
+      run: |
+        mkdir -p target/debug
     - name: Run exercises evaluation
       run: |
         cargo xtask eval --course rustlings | tee ci-outputs/test_output.txt
@@ -209,6 +212,9 @@ jobs:
     - name: Create CI outputs directory
       run: |
         mkdir -p ci-outputs
+    - name: Create target directory for xtask
+      run: |
+        mkdir -p target/debug
     - name: Run C++ course evaluation
       run: |
         cargo run --bin xtask -- eval --course learning-cxx --verbose | tee ci-outputs/cxx_test_output.txt
